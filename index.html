@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ROR Community Patch Notes</title>
+  <link rel="icon" type="image/png" href="favicon.ico">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,74 +12,226 @@
       margin: 0;
       padding: 20px;
       color: #e0e0e0; /* Light text for contrast */
+      display: flex;
+      justify-content: center; /* Center horizontally */
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
     }
     h1 {
       color: #ffffff;
+      text-align: center;
     }
-    .patch {
+    details {
       background: #1f2535; /* Slightly lighter than background */
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.5);
       margin-bottom: 20px;
-      padding: 15px;
+      padding: 10px 15px;
     }
-    .patch h2 {
-      margin: 0 0 10px;
+    summary {
+      cursor: pointer;
       font-size: 1.2rem;
-      color: #ffcc66; /* Highlighted patch titles */
+      color: #ffcc66; /* Patch titles */
+      font-weight: bold;
+      outline: none;
     }
-    .patch ul {
-      margin: 0;
+    summary::-webkit-details-marker {
+      color: #ff9966; /* Marker color */
+    }
+    ul {
+      margin: 10px 0 0 0;
       padding-left: 20px;
     }
-    .patch li {
+    li {
       margin-bottom: 8px;
       line-height: 1.4;
     }
     strong {
       color: #ff9966;
     }
+    li::marker {
+      color: #ff9966;
+    }
+    .header-img {
+  width: 100%;
+  max-width: 800px; /* match container width */
+  height: auto; /* keeps aspect ratio */
+  display: block;
+  margin: 0 auto 20px auto; /* center + spacing below */
+  border-radius: 10px; /* optional: rounded edges to match theme */
+}
   </style>
 </head>
 <body>
-  <h1>Rise of the Ancients - ROR Community Patch Notes/h1>
+<div class="container">
+  <img src="community_patch_data.png" alt="Community Patch Banner" class="header-img">
+  <h1>Rise of the Ancients - ROR Community Patch Notes</h1>
 
-  <div class="patch">
-    <h2>Update 1.1 – May 2024 (First Release)</h2>
-    <ul>
-      <li><strong>Needlework:</strong><br>
-        NEW Technology - Tool Age - Town Center<br>
-        Villagers +15 HP and +1 Attack<br>
-        Cost: 50 Food 25 Wood, Research Time: 20 sec<br>
-        (Available to every Civilization except Sumerians).
-      </li>
-      <li><strong>Clubman:</strong><br>
-        Train time increased from 26 sec to 30 sec
-      </li>
-      <li><strong>Axeman:</strong><br>
-        Train time decreased from 26 sec to 25 sec
-      </li>
-      <li><strong>Battle Axe Upgrade:</strong><br>
-        Research time increased from 40 sec to 50 sec
-      </li>
-      <li><strong>Leather Infantry Armor:</strong><br>
-        Research time increased from 30 sec to 45 sec
-      </li>
-      <li><strong>Bowman:</strong><br>
-        Projectile Speed decreased from 8 to 7<br>
-        (only affects Bowman).
-      </li>
-      <li><strong>Zealotry:</strong><br>
-        Hit Points bonus decreased from 40 to 25<br>
-        Melee attack bonus damage decreased from 7 to 6<br>
-        (decreased values based on Needlework values to retain original Zealotry balance).
-      </li>
-      <li><strong>Sumerians (New Civ Bonus):</strong><br>
-        Villagers have +1 Attack in Tool Age.<br>
-        (Other Civ Bonuses unchanged, do not have access to Needlework Technology).
-      </li>
-    </ul>
+    <!-- Update 1.4 -->
+    <details open>
+      <summary>Update 1.4 – July 2024</summary>
+      <ul>
+        <li><strong>Needlework:</strong><br>
+          Cost changed from 50 Food 25 Wood to 50 Food<br>
+          (Research Time is unchanged and still 20 sec).
+        </li>
+        <li><strong>House:</strong><br>
+          Hit Points increased from 75 to 100
+        </li>
+        <li><strong>Battle Axe:</strong><br>
+          Upgrade research time decreased from 50 sec to 45 sec
+        </li>
+        <li><strong>Axeman:</strong><br>
+          Train time increased from 25 sec to 26 sec
+        </li>
+        <li><strong>Slinger:</strong><br>
+          Cost increased from 40 Food 10 Stone to 45 Food 10 Stone
+        </li>
+        <li><strong>Scout:</strong><br>
+          Cost decreased from 90 Food to 85 Food and now have x2 conversion resistance
+        </li>
+        <li><strong>Stone Mining:</strong><br>
+          Upgrade cost increased from 100 Food 50 Stone to 120 Food 50 Stone
+        </li>
+        <li><strong>Towers:</strong><br>
+          Now cause 100% more damage to Scout Ship-line and Transport Ship-line<br>
+          (Affected units are Scout Ship, War Galley, Trireme, Light Transport and Heavy Transport).
+        </li>
+        <li><strong>Composite Bowman:</strong><br>
+          Upgrade research time reduced from 100 sec to 80 sec
+        </li>
+        <li><strong>Legionary:</strong><br>
+          Movement Speed increased from 1 to 1.05
+        </li>
+        <li><strong>War & Armored Elephant:</strong><br>
+          Movement Speed increased from 0.75 to 0.80
+        </li>
+        <li><strong>Heavy Catapult:</strong><br>
+          Pierce Armor reduced from 5 to 4<br>
+          Blast Radius reduced from 1.5 to 1.4
+        </li>
+        <li><strong>Ballista & Helepolis:</strong><br>
+          Projectile Speed increased from 4.067 to 4.9
+        </li>
+        <li><strong>Assyrians (Adjusted Civ Bonuses):</strong><br>
+          Archers fire 22/33% faster in Tool/Bronze Age<br>
+          (Previously "Archers fire 11/22/33% faster in Tool/Bronze/Iron Age").
+        </li>
+        <li><strong>Greeks (Adjusted Civ Bonuses):</strong><br>
+          Academy units move 25% faster and cost -20%<br>
+          (Previously "Academy units move 30% faster and cost -20%").
+        </li>
+        <li><strong>Lac Viet (Adjusted Civ Bonuses):</strong><br>
+          Military Units created 20% faster starting in Tool Age<br>
+          (Previously "Military Units created 20% faster").
+        </li>
+        <li><strong>Yamato (Adjusted Civ Bonuses):</strong><br>
+          Scouts cost -10% Cavalry and Horse Archer lines cost -15%<br>
+          (Previously "All cavalry units and Horse Archers cost -15%").
+        </li>
+      </ul>
+    </details>
+
+    <!-- Update 1.3 -->
+    <details>
+      <summary>Update 1.3 – May 2024</summary>
+      <ul>
+        <li><strong>Needlework:</strong><br>
+          Villagers now gains +10 HP instead of +15 HP.
+        </li>
+        <li><strong>Cavalry, Heavy Cavalry and Cataphract:</strong><br>
+          Cost changed from 70 Food 80 Gold to 75 Food 70 Gold
+        </li>
+        <li><strong>Scythe Chariot:</strong><br>
+          Blast Damage decreased from 1 to 0.8 (100% to 80%).
+        </li>
+        <li><strong>City Watch:</strong><br>
+          Now available for every Civilization.<br>
+          Research cost changed from 100 Food 15 sec to 75 Food 20 sec<br>
+          (Previously not available for Assyrians, Egyptians and Persians).
+        </li>
+        <li><strong>Urbanization:</strong><br>
+          Now available for every Civilization.<br>
+          (Previously not available for Choson, Hittites, Lac Viet, Minoans, Phoenicians and Yamato).
+        </li>
+        <li><strong>Zealotry:</strong><br>
+          Hit Points bonus decreased from 40 to 30<br>
+          (decreased values based on new Needlework values to retain original Zealotry balance).
+        </li>
+        <li><strong>Ballista Tower:</strong><br>
+          Reload Time decreased from 3.1 to 3.0<br>
+          Projectile Speed increased from 4.067 to 4.9<br>
+          (New values are equal to Ballista Tower stats in Aoe1 DE).
+        </li>
+        <li><strong>Lac Viet (Adjusted Civ Bonuses):</strong><br>
+          Military Units created 20% faster.<br>
+          (Previously "Military Units created 25% faster").<br>
+          Archery Range units +1/+2 Armor in Tool/Iron Age, Ballista +2 armor.<br>
+          (Previously "Archery Range units and Ballista +2 armor").
+        </li>
+        <li><strong>Macedonians (New TB):</strong><br>
+          Archery Ranges work 10% faster<br>
+          (Previously "Houses +50 HP").
+        </li>
+        <li><strong>Shang (New TB):</strong><br>
+          Government Centers work 80% faster (44% less time)<br>
+          (Previously "Town centers provide +4 population room").
+        </li>
+        <li><strong>Bug Fixes:</strong><br>
+          Clubman, Axeman and Leather Armor for Infantry now properly display correct names in Capture Age.
+        </li>
+      </ul>
+    </details>
+
+    <!-- Update 1.2 -->
+    <details>
+      <summary>Update 1.2 – May 2024</summary>
+      <ul>
+        <li>No Balance Changes.</li>
+        <li>Fixed a bug where Needlework wouldn’t properly display cost within tech tree or properly update the Dark Green/Light Green visual effect when the technology is researched or not.</li>
+      </ul>
+    </details>
+
+    <!-- Update 1.1 -->
+    <details>
+      <summary>Update 1.1 – May 2024 (First Release)</summary>
+      <ul>
+        <li><strong>Needlework:</strong><br>
+          NEW Technology - Tool Age - Town Center<br>
+          Villagers +15 HP and +1 Attack<br>
+          Cost: 50 Food 25 Wood, Research Time: 20 sec<br>
+          (Available to every Civilization except Sumerians).
+        </li>
+        <li><strong>Clubman:</strong><br>
+          Train time increased from 26 sec to 30 sec
+        </li>
+        <li><strong>Axeman:</strong><br>
+          Train time decreased from 26 sec to 25 sec
+        </li>
+        <li><strong>Battle Axe Upgrade:</strong><br>
+          Research time increased from 40 sec to 50 sec
+        </li>
+        <li><strong>Leather Infantry Armor:</strong><br>
+          Research time increased from 30 sec to 45 sec
+        </li>
+        <li><strong>Bowman:</strong><br>
+          Projectile Speed decreased from 8 to 7<br>
+          (only affects Bowman).
+        </li>
+        <li><strong>Zealotry:</strong><br>
+          Hit Points bonus decreased from 40 to 25<br>
+          Melee attack bonus damage decreased from 7 to 6<br>
+          (decreased values based on Needlework values to retain original Zealotry balance).
+        </li>
+        <li><strong>Sumerians (New Civ Bonus):</strong><br>
+          Villagers have +1 Attack in Tool Age.<br>
+          (Other Civ Bonuses unchanged, do not have access to Needlework Technology).
+        </li>
+      </ul>
+    </details>
+
   </div>
-
 </body>
 </html>
