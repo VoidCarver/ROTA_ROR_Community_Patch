@@ -44,9 +44,6 @@
       font-weight: bold;
       outline: none;
     }
-    summary::-webkit-details-marker {
-      color: #ff9966; /* Marker color */
-    }
     ul {
       margin: 10px 0 0 0;
       padding-left: 20px;
@@ -77,69 +74,210 @@
 </head>
 <body>
 <div class="container">
-  <img src="community_patch_data.png" alt="Community Patch Banner" class="header-img">
-  <h1>Rise of the Ancients - ROR Community Patch Notes</h1>
-    <ul>
-      <li>You can find below the changelog of every ROR Community Patches.</li>
+  <img src="rota-youtube.png" alt="Community Patch Banner" class="header-img">
+  <h1>ROR Community Patch Notes</h1>
+    <ul>      
       <li>The mod can be found on 
         <a href="https://www.ageofempires.com/mods/details/236998/" target="_blank">Age of Empires Mod Page</a>
       </li>
+      <li>Full patch note of the currently playable ROR Community Patch.</li>
     </ul>
 
-    <!-- Update 1.4 -->
+    <!-- Currently Live - Update 1.4 -->
     <details open>
-      <summary>Update 1.4 – July 2024</summary>
+      <summary>Currently Live - Update 1.4 – July 2024</summary>
 
       <!-- Technologies -->
       <h3>Technologies</h3>
       <ul>
         <li><strong>Needlework</strong><br>
-          Cost changed from 50 Food 25 Wood to 50 Food<br>
-          (Research Time is unchanged and still 20 sec).
+          <strong>NEW</strong> - Tool Age - Town Center<br>
+          Villagers +15 HP and +1 Attack<br>
+          Cost 50 Food, Research Time 20 sec<br>
+          (Available to every Civilization except Sumerians).
         </li>
         <li><strong>Battle Axe</strong><br>
-          Upgrade research time decreased from 50 sec to 45 sec
+          Upgrade research time increased from 40 sec -> 45 sec
+        </li>
+        <li><strong>Leather Infantry Armor</strong><br>
+          Research time increased from 30 sec -> 45 sec
         </li>
         <li><strong>Stone Mining</strong><br>
-          Upgrade cost increased from 100 Food 50 Stone to 120 Food 50 Stone
+          Upgrade cost increased from 100 Food 50 Stone -> 120 Food 50 Stone
         </li>
         <li><strong>Composite Bowman</strong><br>
-          Upgrade research time reduced from 100 sec to 80 sec
-        </li>    
+          Upgrade research time reduced from 100 sec -> 80 sec
+        </li>
+        <li><strong>City Watch</strong><br>
+          Now available for every Civilization.<br>
+          Research cost changed from 100 Food 15 sec -> 75 Food 20 sec<br>
+          <span class="previous">(Previously not available for Assyrians, Egyptians and Persians).</span>
+        </li>
+        <li><strong>Urbanization</strong><br>
+          Now available for every Civilization.<br>
+          <span class="previous">(Previously not available for Choson, Hittites, Lac Viet, Minoans, Phoenicians and Yamato).</span>
+        </li>
+        <li><strong>Zealotry</strong><br>
+          Hit Points bonus decreased from 40 -> 30<br>
+          Melee attack bonus damage decreased from 7 -> 6<br>
+          <span class="previous">(decreased values based on Needlework values to retain original Zealotry balance).</span>
+        </li>  
       </ul>
 
       <!-- Units -->
       <h3>Units</h3>
       <ul>
+        <li><strong>Clubman</strong><br>
+          Train time increased from 26 sec -> 30 sec
+        </li>
+        <li><strong>Bowman</strong><br>
+          Projectile Speed decreased from 8 -> 7<br>
+          (only affects Bowman without Alchemy upgrade).
+        </li> 
+        <li><strong>Slinger</strong><br>
+          Cost increased from 40 Food 10 Stone -> 45 Food 10 Stone
+        </li>
+        <li><strong>Scout</strong><br>
+          Cost decreased from 90 Food -> 85 Food<br>
+          Now have x2 conversion resistance
+        </li>
+        <li><strong>Cavalry, Heavy Cavalry and Cataphract</strong><br>
+          Cost changed from 70 Food 80 Gold -> 75 Food 70 Gold
+        </li>
+        <li><strong>Legionary</strong><br>
+          Move Speed increased from 1 -> 1.05
+        </li>
+        <li><strong>Scythe Chariot</strong><br>
+          Blast Damage decreased from 1 -> 0.8 (100% to 80%).
+        </li>
+        <li><strong>War & Armored Elephant</strong><br>
+          Move Speed increased from 0.75 -> 0.80
+        </li>
+        <li><strong>Heavy Catapult</strong><br>
+          Pierce Armor reduced from 5 -> 4<br>
+          Blast Radius reduced from 1.5 -> 1.4
+        </li>
+        <li><strong>Ballista & Helepolis</strong><br>
+          Projectile Speed increased from 4.067 -> 4.9
+        </li>
+
+      </ul>
+
+      <!-- Buildings -->
+      <h3>Buildings</h3>
+      <ul>
         <li><strong>House</strong><br>
-          Hit Points increased from 75 to 100
+          Hit Points increased from 75 -> 100
         </li>
         <li><strong>Towers</strong><br>
           Now cause 100% more damage to Scout Ship-line and Transport Ship-line<br>
           (Affected units are Scout Ship, War Galley, Trireme, Light Transport and Heavy Transport).
+        </li>
+        <li><strong>Ballista Tower</strong><br>
+          Reload Time decreased from 3.1 -> 3.0<br>
+          Projectile Speed increased from 4.067 -> 4.9<br>
+          <span class="previous">(New values are equal to Ballista Tower stats in Aoe1 DE).</span>
+        </li>
+      </ul>
+
+      <!-- Civilizations -->
+      <h3>Civilizations</h3>
+      <ul>
+        <li><strong>Assyrians</strong><br>
+          Archers fire 22/33% faster in Tool/Bronze Age<br>
+          <span class="previous">(Previously "Archers fire 11/22/33% faster in Tool/Bronze/Iron Age").</span>
+        </li>
+        <li><strong>Greeks</strong><br>
+          Academy units move 25% faster and cost -20%<br>
+          <span class="previous">(Previously "Academy units move 30% faster and cost -20%").</span>
+        </li>
+        <li><strong>Lac Viet</strong><br>
+          Military Units created 20% faster starting in Tool Age<br>
+          <span class="previous">(Previously "Military Units created 20% faster").</span><br>
+          <span class="previous">(Default "Military Units created 25% faster").</span>
+        </li>
+        <li><strong>Macedonians</strong><br>
+          Archery Ranges work 10% faster<strong> (New TB)</strong><br>
+          <span class="previous">(Previously "Houses +50 HP").</span>
+        </li>
+        <li><strong>Shang</strong><br>
+          Government Centers work 80% faster (44% less time)<strong> (New TB)</strong><br>
+          <span class="previous">(Previously "Town centers provide +4 population room").</span>
+        </li>
+        <li><strong>Sumerians</strong><br>
+          Villagers have +1 Attack in Tool Age.<strong>(New Civ Bonus)</strong><br>
+          (do not have access to Needlework Technology).
+        </li>
+        <li><strong>Yamato</strong><br>
+          Scouts cost -10% Cavalry and Horse Archer lines cost -15%<br>
+          <span class="previous">(Previously "All cavalry units and Horse Archers cost -15%").</span>
+        </li>        
+      </ul>
+
+    </details>
+
+    <ul>
+      <li><strong>You can find below the changelogs of every ROR Community Patches.</strong></li>
+    </ul>
+    <!-- Update 1.4 -->
+    <details>
+      <summary>Changelog - Update 1.4 – July 2024</summary>
+
+      <!-- Technologies -->
+      <h3>Technologies</h3>
+      <ul>
+        <li><strong>Needlework</strong><br>
+          Cost changed from 50 Food 25 Wood -> 50 Food<br>
+          (Research Time is unchanged and still 20 sec).
+        </li>
+        <li><strong>Battle Axe</strong><br>
+          Upgrade research time decreased from 50 sec -> 45 sec
+        </li>
+        <li><strong>Stone Mining</strong><br>
+          Upgrade cost increased from 100 Food 50 Stone -> 120 Food 50 Stone
+        </li>
+        <li><strong>Composite Bowman</strong><br>
+          Upgrade research time reduced from 100 sec -> 80 sec
         </li>    
+      </ul>
+
+      <!-- Units -->
+      <h3>Units</h3>
+      <ul>   
         <li><strong>Axeman</strong><br>
-          Train time increased from 25 sec to 26 sec
+          Train time increased from 25 sec -> 26 sec
         </li>
         <li><strong>Slinger</strong><br>
-          Cost increased from 40 Food 10 Stone to 45 Food 10 Stone
+          Cost increased from 40 Food 10 Stone -> 45 Food 10 Stone
         </li>
         <li><strong>Scout</strong><br>
-          Cost decreased from 90 Food to 85 Food and now have x2 conversion resistance
+          Cost decreased from 90 Food -> 85 Food and now have x2 conversion resistance
         </li>
         <li><strong>Legionary</strong><br>
-          Movement Speed increased from 1 to 1.05
+          Move Speed increased from 1 -> 1.05
         </li>
         <li><strong>War & Armored Elephant</strong><br>
-          Movement Speed increased from 0.75 to 0.80
+          Movem Speed increased from 0.75 -> 0.80
         </li>
         <li><strong>Heavy Catapult</strong><br>
-          Pierce Armor reduced from 5 to 4<br>
-          Blast Radius reduced from 1.5 to 1.4
+          Pierce Armor reduced from 5 -> 4<br>
+          Blast Radius reduced from 1.5 -> 1.4
         </li>
         <li><strong>Ballista & Helepolis</strong><br>
-          Projectile Speed increased from 4.067 to 4.9
+          Projectile Speed increased from 4.067 -> 4.9
         </li>
+      </ul>
+
+      <!-- Buildings -->
+      <h3>Buildings</h3>
+      <ul>
+        <li><strong>House</strong><br>
+          Hit Points increased from 75 -> 100
+        </li>
+        <li><strong>Towers</strong><br>
+          Now cause 100% more damage to Scout Ship-line and Transport Ship-line<br>
+          (Affected units are Scout Ship, War Galley, Trireme, Light Transport and Heavy Transport).
+        </li> 
       </ul>
 
       <!-- Civilizations -->
@@ -162,12 +300,12 @@
           <span class="previous">(Previously "All cavalry units and Horse Archers cost -15%").</span>
         </li>
       </ul>
-      
+
     </details>
 
     <!-- Update 1.3 -->
     <details>
-      <summary>Update 1.3 – May 2024</summary>
+      <summary>Changelog - Update 1.3 – May 2024</summary>
 
       <!-- Technologies -->
       <h3>Technologies</h3>
@@ -177,7 +315,7 @@
         </li>
         <li><strong>City Watch</strong><br>
           Now available for every Civilization.<br>
-          Research cost changed from 100 Food 15 sec to 75 Food 20 sec<br>
+          Research cost changed from 100 Food 15 sec -> 75 Food 20 sec<br>
           <span class="previous">(Previously not available for Assyrians, Egyptians and Persians).</span>
         </li>
         <li><strong>Urbanization</strong><br>
@@ -185,8 +323,8 @@
           <span class="previous">(Previously not available for Choson, Hittites, Lac Viet, Minoans, Phoenicians and Yamato).</span>
         </li>
         <li><strong>Zealotry</strong><br>
-          Hit Points bonus decreased from 40 to 30<br>
-          (decreased values based on new Needlework values to retain original Zealotry balance).
+          Hit Points bonus decreased from 40 -> 30<br>
+          <span class="previous">(decreased values based on Needlework values to retain original Zealotry balance).</span>
         </li>
       </ul>
 
@@ -194,15 +332,15 @@
       <h3>Units</h3>
       <ul>
         <li><strong>Cavalry, Heavy Cavalry and Cataphract</strong><br>
-          Cost changed from 70 Food 80 Gold to 75 Food 70 Gold
+          Cost changed from 70 Food 80 Gold -> 75 Food 70 Gold
         </li>
         <li><strong>Scythe Chariot</strong><br>
-          Blast Damage decreased from 1 to 0.8 (100% to 80%).
+          Blast Damage decreased from 1 -> 0.8 (100% to 80%).
         </li>
         <li><strong>Ballista Tower</strong><br>
-          Reload Time decreased from 3.1 to 3.0<br>
-          Projectile Speed increased from 4.067 to 4.9<br>
-          (New values are equal to Ballista Tower stats in Aoe1 DE).
+          Reload Time decreased from 3.1 -> 3.0<br>
+          Projectile Speed increased from 4.067 -> 4.9<br>
+          <span class="previous">(New values are equal to Ballista Tower stats in Aoe1 DE).</span>
         </li>
       </ul>
 
@@ -235,7 +373,7 @@
 
     <!-- Update 1.2 -->
     <details>
-      <summary>Update 1.2 – May 2024</summary>
+      <summary>Changelog - Update 1.2 – May 2024</summary>
       
       <ul>
         <li>No Balance Changes.</li>
@@ -244,14 +382,15 @@
       <!-- Bug Fixes -->
       <h3>Bug Fixes</h3>
       <ul>
-        <li>Fixed a bug where Needlework wouldn’t properly display cost within tech tree or properly update the Dark Green/Light Green visual effect when the technology is researched or not.</li>
+        <li>Fixed a bug where Needlework wouldn’t properly display cost within tech tree or properly<br>
+          update the Dark Green/Light Green visual effect when the technology is researched or not.</li>
       </ul>
 
     </details>
 
     <!-- Update 1.1 -->
     <details>
-      <summary>Update 1.1 – May 2024 (First Release)</summary>
+      <summary>Changelog - Update 1.1 – May 2024 (First Release)</summary>
 
       <!-- Technologies -->
       <h3>Technologies</h3>
@@ -263,15 +402,15 @@
           (Available to every Civilization except Sumerians).
         </li>
         <li><strong>Battle Axe Upgrade</strong><br>
-          Research time increased from 40 sec to 50 sec
+          Research time increased from 40 sec -> 50 sec
         </li>
         <li><strong>Leather Infantry Armor</strong><br>
-          Research time increased from 30 sec to 45 sec
+          Research time increased from 30 sec -> 45 sec
         </li>
         <li><strong>Zealotry</strong><br>
-          Hit Points bonus decreased from 40 to 25<br>
-          Melee attack bonus damage decreased from 7 to 6<br>
-          (decreased values based on Needlework values to retain original Zealotry balance).
+          Hit Points bonus decreased from 40 -> 25<br>
+          Melee attack bonus damage decreased from 7 -> 6<br>
+          <span class="previous">(decreased values based on Needlework values to retain original Zealotry balance).</span>
         </li>
       </ul>
 
@@ -279,13 +418,13 @@
       <h3>Units</h3>
       <ul>
         <li><strong>Clubman</strong><br>
-          Train time increased from 26 sec to 30 sec
+          Train time increased from 26 sec -> 30 sec
         </li>
         <li><strong>Axeman</strong><br>
-          Train time decreased from 26 sec to 25 sec
+          Train time decreased from 26 sec -> 25 sec
         </li>
         <li><strong>Bowman</strong><br>
-          Projectile Speed decreased from 8 to 7<br>
+          Projectile Speed decreased from 8 -> 7<br>
           (only affects Bowman).
         </li>
       </ul>
