@@ -1,217 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROTA - Tournaments</title>
-  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-<div class="container">
-  <img src="./img/rota-banner.png" alt="Community Patch Banner" class="header-img">
-  <!-- Nav Menu -->
-  <div id="nav-placeholder"></div>
+    html {
+      overflow-y: scroll; /* Always show vertical scrollbar */
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background: #171c28;
+      margin: 0;
+      padding: 20px;
+      color: #ffffff;
+    }
 
-    <div class="news-box">
-      <img src="./img/rota-avatar.png" alt="ROTA Avatar" class="rota-avatar">
-      <h2>Rise of the Ancients</h2>
-      <h3>Tournaments & Events Global Data</h3>
-      <h5>- Total Prize Pool: $3355</h5>
-      <h5>- Tournaments: 7</h5>
-      <h5>- Showmatches: 4</h5>
-      <h5>- Leagues: 4</h5>
-      <h3>All available can be found on our
-        <a href="https://www.youtube.com/channel/UC0FUCk8OxViRKkLdRl3Y_kQ" target="_blank" rel="noopener noreferrer">YouTube</a> 
-        Channel.<br>      
-      </h3>    
-    </div>
+    .container {
+      max-width: 800px;
+      margin: 0 auto; /* centers container horizontally */
+    }
 
-    <div class="news-box">
-    <details open>
-    <summary>Tournaments</summary>
-    <br>
-      <!-- May 2025 - Earth to Iron -->
-      <details>
-      <summary class="summary-h2">May 2025 - Earth to Iron - 1vs1</summary>
-        <ul>
-          <li>Prize Pool: $330</li>      
-          <li><a href="https://liquipedia.net/ageofempires/Earth_To_Iron" target="_blank" rel="noopener noreferrer">Liquipedia</a></li>
-          <li><a href="https://www.youtube.com/watch?v=LVKXIdoY0Lo&list=PLZczkiwd2f-ivk1wonpW-FOo12tH-vtqU" target="_blank" rel="noopener noreferrer">VODs Playlist</a></li>
-        </ul>
-      </details>
+    .header-img {
+      width: 100%;
+      max-width: 800px; /* match container width */
+      height: auto;
+      display: block;
+      margin: 0 auto 20px auto;
+      border-radius: 10px; /* Optional: rounded edges to match theme */
+    }
 
-      <!-- Nov 2024 - Mayhem Addicts -->
-      <details>
-      <summary class="summary-h2">Nov 2024 - Mayhem Addicts - 2vs2</summary>
-        <ul>
-          <li>Prize Pool: $280</li>      
-          <li><a href="https://liquipedia.net/ageofempires/Mayhem_Addicts" target="_blank" rel="noopener noreferrer">Liquipedia</a></li>
-          <li><a href="https://www.youtube.com/watch?v=Ed_120e-hMM&list=PLZczkiwd2f-gFeG5rCbgqjLBIlVTAt1BZ" target="_blank" rel="noopener noreferrer">VODs Playlist</a></li>
-        </ul>
-      </details>
+    .news-box .rota-avatar {
+      display: block;       /* makes it behave like a block element */
+      margin: 0 auto 16px;  /* centers it horizontally + space below */
+      max-width: 150px;     /* optional: control size */
+      height: auto;         /* keeps aspect ratio */
+      border-radius: 8px;   /* optional: rounded corners */
+    }
 
-      <!-- Jul 2024 - Contenders Clash -->
-      <details>
-      <summary class="summary-h2">Jul 2024 - Contenders Clash - 1vs1</summary>
-      <ul>
-        <li>Prize Pool: $200</li>      
-        <li><a href="https://liquipedia.net/ageofempires/Contenders_Clash" target="_blank" rel="noopener noreferrer">Liquipedia</a></li>
-        <li><a href="https://www.youtube.com/watch?v=tsAMlLaXJx8&list=PLZczkiwd2f-h9YEbS-kePC3HG8OQGXrK8" target="_blank" rel="noopener noreferrer">VODs Playlist</a></li>
-      </ul>
-      </details>
+    .news-box .aoe2-logo {
+      display: block;       /* makes it behave like a block element */
+      margin: 0 auto 16px;  /* centers it horizontally + space below */
+      max-width: 150px;     /* optional: control size */
+      height: auto;         /* keeps aspect ratio */
+      border-radius: 8px;   /* optional: rounded corners */
+    }
 
-      <!-- Oct 2023 - Mixed Map Pool -->
-      <details>
-      <summary class="summary-h2">Oct 2023 - Mixed Map Pool - 1vs1</summary>
-      <ul>
-        <li>Prize Pool: $100</li>      
-        <li><a href="https://liquipedia.net/ageofempires/Mixed_Map_ROR" target="_blank" rel="noopener noreferrer">Liquipedia</a></li>
-        <li><a href="https://www.youtube.com/watch?v=sVR_ziy0U2w" target="_blank" rel="noopener noreferrer">VOD</a></li>
-      </ul>
-      </details>
+    h1 {
+      color: #ffffff;
+      text-align: center;
+    }
 
-      <!-- Oct 2023 - Masters of Citadel -->
-      <details>
-      <summary class="summary-h2">Oct 2023 - Masters of Citadel - 1vs1</summary>
-      <ul>
-        <li>Prize Pool: $175</li>      
-        <li><a href="https://liquipedia.net/ageofempires/Masters_of_Citadel" target="_blank" rel="noopener noreferrer">Liquipedia</a></li>
-        <li><a href="https://www.youtube.com/watch?v=9c4EE7J6zbo&list=PLZczkiwd2f-ilO-e8va_2y0kwCBr2IDXt" target="_blank" rel="noopener noreferrer">VODs Playlist</a></li>
-      </ul>
-      </details>
+    h2 {
+      color: #ff9966;
+      text-align: center;
+    }
 
-      <!-- Sep 2023 - 1st Championship -->
-      <details>
-      <summary class="summary-h2">Sep 2023 - 1st Championship - 1vs1</summary>
-      <ul>
-        <li>Prize Pool: $650</li>      
-        <li><a href="https://liquipedia.net/ageofempires/Championship_1v1_ROR" target="_blank" rel="noopener noreferrer">Liquipedia</a></li>
-        <li><a href="https://www.youtube.com/watch?v=TNJ8dVneXmo&list=PLZczkiwd2f-iVPBdIgU4zBzAQeGALmQ9o" target="_blank" rel="noopener noreferrer">VODs Playlist</a></li>
-      </ul>
-      </details>
+    h3 {
+      font-size: 1rem; 
+      color: #ffcc66;
+      text-align: center; 
+    }
 
-      <!-- Jun 2023 - The Battle Royale 2 -->
-      <details>
-      <summary class="summary-h2">Jun 2023 - The Battle Royale 2 - 2vs2</summary>
-      <ul>
-        <li>Prize Pool: $850</li>      
-        <li><a href="https://liquipedia.net/ageofempires/The_Battle_Royale/2" target="_blank" rel="noopener noreferrer">Liquipedia</a></li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">VODs Playlist</a></li>
-      </ul>
-      </details>
-    </details>
+    h4 {
+      color: #ffcc66;
+    }
 
-    </div>
+    h5 {
+      font-size: 1rem; 
+      color: #ffffff;
+      text-align: center;
+    }
 
-    <div class="news-box">
-    <details>
-    <summary>Showmatches</summary>
-    <br>
-      <!-- Oct 2024 - Showmatch El Reinado -->
-      <details>
-      <summary class="summary-h2">Oct 2024 - Showmatch El Reinado - 1vs1</summary>
-        <ul>
-          <li>Prize Pool: $</li>      
-          <li><a href="" target="_blank" rel="noopener noreferrer">VOD</a></li>
-        </ul>
-      </details>
+    details {
+      background: #1f2535;
+      border: 1px solid #ffcc66; /* added gold border */
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
+      padding: 10px 15px;
+    }
 
-      <!-- Oct 2024 - Showmatch El Reinado -->
-      <details>
-      <summary class="summary-h2">Oct 2024 - Showmatch El Reinado - 1vs1</summary>
-        <ul>
-          <li>Prize Pool: $</li>      
-          <li><a href="" target="_blank" rel="noopener noreferrer">VOD</a></li>
-        </ul>
-      </details>
+    summary {
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: #ffcc66;
+      font-weight: bold;
+      outline: none;
+    }
 
-      <!--  -->
-      <details>
-      <summary class="summary-h2"> - 1vs1</summary>
-        <ul>
-          <li>Prize Pool: $</li>      
-          <li><a href="" target="_blank" rel="noopener noreferrer">VOD</a></li>
-        </ul>
-      </details>
+    .summary-h2 {
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: #ffcc66;
+      font-weight: bold;
+      outline: none;
+    }
 
-      <!--  -->
-      <details>
-      <summary class="summary-h2"> - 1vs1</summary>
-        <ul>
-          <li>Prize Pool: $</li>      
-          <li><a href="" target="_blank" rel="noopener noreferrer">VOD</a></li>
-        </ul>
-      </details>
+    .news-box {
+      background: #1f2535;        /* same as nav background */
+      /* border: 1px solid #ffcc66; */  /* gold border */
+      border-radius: 8px;         /* rounded corners */
+      padding: 16px 20px;
+      margin: 20px auto;
+      max-width: 800;           /* center container size */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
 
-    </details>
-    </div>
+    ul {
+      margin: 10px 0 0 0;
+      padding-left: 20px;
+    }
 
-    <div class="news-box">
-    <details>
-    <summary>Leagues</summary>
-    <br>
-    <!-- Rise of the Ancients – Season 4 -->
-      <details>
-      <summary class="summary-h2">Rise of the Ancients – Season 4 - 1vs1</summary>
-        <ul>
-          <li>Prize Pool: $</li>      
-          <li><a href="" target="_blank" rel="noopener noreferrer">VOD</a></li>
-        </ul>
-      </details>
+    li {
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
 
-      <!-- Rise of the Ancients – Season 3 -->
-      <details>
-      <summary class="summary-h2">Rise of the Ancients – Season 3 - 1vs1</summary>
-        <ul>
-          <li>Prize Pool: $</li>      
-          <li><a href="" target="_blank" rel="noopener noreferrer">VOD</a></li>
-        </ul>
-      </details>
+    strong {
+      color: #ffcc66;
+    }
 
-      <!-- Rise of the Ancients – Season 2 -->
-      <details>
-      <summary class="summary-h2">Rise of the Ancients – Season 2 - 1vs1</summary>
-        <ul>
-          <li>Prize Pool: $</li>      
-          <li><a href="" target="_blank" rel="noopener noreferrer">VOD</a></li>
-        </ul>
-      </details>
+    li::marker {
+      color: #ffcc66;
+    }
 
-      <!-- Rise of the Ancients – Season 1 -->
-      <details>
-      <summary class="summary-h2">Rise of the Ancients – Season 1 - 1vs1</summary>
-        <ul>
-          <li>Prize Pool: $</li>      
-          <li><a href="" target="_blank" rel="noopener noreferrer">VOD</a></li>
-        </ul>
-      </details>
-    </details>
-    </div>
+    .newpatch {
+      color: #ff9966;
+    }
 
-  <!-- Script to load nav.html -->
-  <script>
-    fetch("includes/nav.html")
-      .then(response => response.text())
-      .then(data => {
-        const nav = document.getElementById("nav-placeholder");
-        nav.innerHTML = data;
-        nav.classList.add("loaded"); // show nav after insertion
-      });
-  </script>
+    .previous {
+      color: #999999;
+    }
 
-  <!-- Back to top button -->
-  <button id="backToTop">↑</button>
-  <script>
-    const backToTop = document.getElementById("backToTop");
+    a {
+    color: #1E90FF;
+    text-decoration: none; /* Optional: Remove underline */
+    transition: color 0.3s;
+    }
 
-    window.addEventListener("scroll", () => {
-      backToTop.style.display = window.scrollY > 200 ? "block" : "none";
-    });
+    a:hover {
+      color: #FF4500;
+      text-decoration: underline; /* Optional: underline on hover */
+    }
+    
+    /* --- NAV MENU STYLING --- */
+    #nav-placeholder {
+      min-height: 35px; /* match your nav height */
+      background-color: #171c28;
+    }
 
-    backToTop.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  </script>
-</body>
-</html>
+    .nav {
+      background: #1f2535;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      height: 35px;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      height: 100%;
+    }
+
+    .menu > li {
+      position: relative;
+      height: 100%;
+    }
+
+    .menu > li > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0 16px;
+      color: #ffcc66;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .menu > li > a:hover {
+      background: #171c28;
+      color: #ffcc66;
+    }
+
+    /* Dropdown Submenu */
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #1f2535;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      min-width: 180px;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+
+    .submenu li a {
+      display: block;
+      width: 100%;
+      padding: 6px 12px;
+      font-size: 13px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+      box-sizing: border-box;
+    }
+
+    .submenu li a:hover {
+      background: #171c28;
+      color: #ffcc66;
+    }
+
+    /* Show dropdown on hover */
+    .menu li:hover > .submenu {
+      display: block;
+    }
+    
+    /* Back to top button */
+    #backToTop {
+      position: fixed;
+      bottom: 45px;
+      /* right:20px; */
+      left: calc(50% + 350px); /* 50% centers it, +XXpx pushes to container edge */    
+      background: #ffcc66;
+      color: #1f2535;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      display: none;
+      transition: opacity 0.3s, transform 0.3s;
+      z-index: 9999;
+    }
+
+    /* Tooltip text */
+    #backToTop::after {
+    content: "Back to Top";
+    position: absolute;
+    top: 110%;           /* place it below the button */
+    left: 40%;           /* center horizontally */
+    transform: translateX(-50%); /* adjust for centering */    
+    /*  background: #1f2535; */
+    color: #ffcc66;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    }
+
+    /* Show tooltip on hover */
+    #backToTop:hover::after {
+      opacity: 1;
+    }
