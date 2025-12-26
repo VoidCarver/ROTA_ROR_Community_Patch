@@ -324,7 +324,7 @@
             - Villagers cost 45 Food<br>
             <span class="previous">(Previously "Villagers cost 40 Food").</span><br>
             - No longer start the game with -40 Food<br>
-            <span class="previous">(Previously "Start the game with -40 Food)</span><br>
+            <span class="previous">(Previously "Start the game with -40 Food).</span><br>
             - Cavalry-line attacks 15% faster<br>
             <span class="previous">(Previously "Cavalry-line attacks 10% faster").</span><br>
             - Walls +50% hit points<br>
@@ -416,7 +416,31 @@
           (defconst scout-cavalry-line -296)<br>
           (defconst camel-line -297)<br>
         </ul>
+
+        <!-- Know Issues -->       
+        <details>
+          <summary>Know Issues</summary>
+            <ul>
+              <li>We've done all we could to make the patch as compatible as possible with CA (Capture Age) 
+                but things like the new technologies will not show up in "currently researching" and it will 
+                not use correct icons. It is all due to CA not reading modded strings.
+              </li>
+
+              <li>Official AI doesn't entirely support this patch, it will play as usual and use the Needlework
+                 Technology but will not make use of the new units, Horseman and Heavy Camel Rider.
+              </li>
+
+              <li>Hotkey for new technologies will not be implemented because that feature is very limited
+                 and not very well integrated either as it force users to create a new hotkey profile, 
+                 switch between them, and sometimes even bug out entire hotkeys profiles that need to be 
+                 entirely re-created.<br>
+                 We had rather not adding them than generating problems and a non pleasant experience.
+              </li>
+            </ul>
+        </details>
+
     </details>
+
 
     <ul>
       <li><strong>Changelog History - ROR Community Patch</strong></li>
@@ -424,7 +448,7 @@
 
     <!-- Update 1.8 -->
     <details open>
-      <summary>Changelog - v1.8 – December 2025</summary>      
+      <summary>Changelog - v1.8 – December 2025</summary>
 
       <!-- Technologies -->
       <h4>Technologies</h4>
@@ -565,9 +589,9 @@
 
         <li><strong>Shang</strong><br>
           - Villagers cost 45 Food<br>
-          <span class="previous">(Previously "Villagers cost 40 Food")</span><br>
+          <span class="previous">(Previously "Villagers cost 40 Food").</span><br>
           - No longer start the game with -40 Food<br>
-          <span class="previous">(Previously "Start the game with -40 Food)</span><br>
+          <span class="previous">(Previously "Start the game with -40 Food).</span><br>
           - Cavalry-line attacks 15% faster<br>
           <span class="previous">(Previously "Cavalry-line attacks 10% faster").</span><br>
           - Walls +50% hit points<br>
